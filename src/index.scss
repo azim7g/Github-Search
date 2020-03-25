@@ -14,6 +14,22 @@ code {
     monospace;
 }
 
+.alert-enter {
+  opacity: 0;
+}
+
+.alert-enter-active {
+  transition: opacity 1000ms ease-in;
+  opacity: 1;
+}
+
+.alert-exit-active {
+  transition: opacity 750ms ease-out;
+  opacity: 0;
+}
+
+/*loader*/
+
 .lds-roller {
   display: inline-block;
   position: relative;

@@ -6,7 +6,7 @@ import {HIDE_ALERT, SHOW_ALERT} from "../actionTypes";
 // аналог классового контекста (<Context>), только доступный в функциональных компонентах с помощьью хуков
 
 const AlertState = ({ children }) => {
-    const [state, dispatch] = useReducer(alertReducer, null);
+    const [state, dispatch] = useReducer(alertReducer, false);
     const hide = () => dispatch({type: HIDE_ALERT});
     const show = (text, type = 'secondary') => dispatch({
         type: SHOW_ALERT,

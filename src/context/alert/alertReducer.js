@@ -3,7 +3,7 @@ import {HIDE_ALERT, SHOW_ALERT} from "../actionTypes";
 
 const handlers = {
     [SHOW_ALERT]: (state, action) => action.payload,
-    [HIDE_ALERT]: () => null,
+    [HIDE_ALERT]: () => false,
     DEFAULT: state => state,
 };
 
